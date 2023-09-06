@@ -24,11 +24,11 @@ const Book = () => {
 
 const Image = () => (
   <img
-    src="https://images-na.ssl-images-amazon.com/images/I/815oQ6G6HDL._AC_UL600_SR600,400_.jpg"
-    alt="Holly Hardcover"
+    src="https://m.media-amazon.com/images/I/51Azhu94JlL._SX348_BO1,204,203,200_.jpg"
+    alt="Facts For Curious Minds"
   />
 )
-const Title = () => <h2>Holly Hardcover</h2>
+const Title = () => <h2>Facts For Curious Minds</h2>
 const Author = () => {
   return <h4>by Stephen King</h4>
 }

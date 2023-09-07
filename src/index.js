@@ -15,26 +15,16 @@ const BookList = () => {
 }
 
 const Book = () => {
+  const title = "Interesting Facts For Curious Minds"
+  const author = "Jordan Moore"
+
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img src="./images/book-1.jpg" alt="Facts For Curious Minds" />
+      <h2>{title}</h2>
+      <h4>{author.toUpperCase()}</h4>
     </article>
   )
-}
-
-const Image = () => (
-  <img src="./images/book-1.jpg" alt="Facts For Curious Minds" />
-)
-const Title = () => <h2>Facts For Curious Minds</h2>
-const Author = () => {
-  const inlineHeadingStyles = {
-    color: "#617d98",
-    fontSize: "0.75rem",
-    marginTop: "0.5rem"
-  }
-  return <h4 style={inlineHeadingStyles}>by Stephen King</h4>
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"))

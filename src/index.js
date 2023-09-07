@@ -3,6 +3,10 @@ import ReactDOM from "react-dom/client"
 
 import "./index.css"
 
+const author = "Jordan Moore"
+const title = "Interesting Facts For Curious Minds"
+const img = "./images/book-1.jpg"
+
 const BookList = () => {
   return (
     <section className="booklist">
@@ -11,9 +15,6 @@ const BookList = () => {
     </section>
   )
 }
-const author = "Jordan Moore"
-const title = "Interesting Facts For Curious Minds"
-const img = "./images/book-1.jpg"
 
 const Book = props => {
   console.log(props)

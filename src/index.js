@@ -23,21 +23,23 @@ const BookList = () => {
   return (
     <section className="booklist">
       {books.map(book => {
-        const { img, title, author, id } = book
-        return <Book key={id} img={img} title={title} author={author} />
+        // const { img, title, author, id } = book
+
+        return <Book key={book.id} book={book} />
       })}
     </section>
   )
 }
 
 const Book = props => {
+  const { img, title, author } = props.book
   console.log(props)
 
   return (
     <article className="book">
-      <img src={props.img} alt={props.title} />
-      <h2>{props.title}</h2>
-      <h4>{props.author.toUpperCase()}</h4>
+      <img src={img} alt={props.title} />
+      <h2>{title}</h2>
+      <h4>{author}</h4>
     </article>
   )
 }
